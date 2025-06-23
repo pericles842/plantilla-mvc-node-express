@@ -1,6 +1,6 @@
 // src/app.ts
 import express from 'express';
-import { sequelize } from './config/db';
+import { sequelize } from './app/config/db';
 import routes from './routes';
 import path from 'path';
 import dotenv from 'dotenv';
@@ -41,8 +41,8 @@ const server = app.listen(port, async () => {
         const address = getLocalIp();
         const actualPort = (server.address() as any).port;
 
-        console.log(chalk.greenBright('🟢 Conectado a la base de datos'));
-        console.log(chalk.greenBright(`🟢 Servidor listo en http://${address}:${actualPort}`));
+        console.log(chalk.hex('#FF69B4')('🟢 Conectado a Mysql'));
+        console.log(chalk.hex('#FF69B4')(`🟢 Servidor listo en http://${address}:${actualPort}`));
 
     } catch (error) {
         console.log(chalk.red('Hubo un problema'), error);
