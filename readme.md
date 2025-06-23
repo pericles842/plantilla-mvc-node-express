@@ -15,6 +15,3 @@ correr datos
 
  correr servidor
 ## npm run dev 
-
-subir a produccion
-## railway up

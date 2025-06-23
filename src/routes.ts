@@ -4,7 +4,8 @@ import { UserController } from './app/controllers/user.controller';
 
 const router = Router();
 
-router.get('/listar', UserController.getAll);
+router.get('/usuario/listar', UserController.getAll);
+router.get('/usuario/listar/query', UserController.listarQuery);
 
 
 export default router;

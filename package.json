@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "main": "index.js",
   "scripts": {
-    "dev": "ts-node-dev --respawn --transpile-only --log-error src/app.ts",
+    "dev": "ts-node-dev --respawn --log-error src/app.ts",
     "build": "tsc",
     "start": "node dist/app.js",
     "migrate": "npx sequelize-cli db:migrate --env development",

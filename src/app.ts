@@ -27,8 +27,9 @@ app.set('views', path.join(__dirname, 'views'));
 // Rutas API
 app.use('/api/', routes);
 
-// Página de ejemplo con EJS
-app.get('/', (_req, res) => res.render('index', { title: 'Mi API con Express + TS' }));
+app.get('/', (req, res) => {
+    res.render('home', { title: 'Home' });
+})
 
 
 

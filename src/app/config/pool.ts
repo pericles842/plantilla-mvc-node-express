@@ -2,6 +2,7 @@ import mysql from 'mysql2/promise';
 import dotenv from 'dotenv';
 dotenv.config();
 
+//conexion con msql2 deprecado
 export const pool = mysql.createPool({
     host: process.env.DB_HOST,
     user: process.env.DB_USER,
